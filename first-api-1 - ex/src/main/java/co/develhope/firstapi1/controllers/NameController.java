@@ -9,12 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/name")
 public class NameController {
 
-    private String myName = "Francis";
+    private String myName = "Matteo";
 
     @GetMapping("")
     public String getName(){
         return "Hello, my name is " + myName;
     }
+
 
     @PostMapping("")
     public String postReversedName(){
